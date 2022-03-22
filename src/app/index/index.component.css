@@ -1,0 +1,12 @@
+.menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 15px;
+    color: #483434;
+    font-family: "Roboto Slab";
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 12px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
