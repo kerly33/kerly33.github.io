@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
+  search: String = "";
 
   constructor(
     private router: Router,
@@ -15,16 +16,16 @@ export class IndexComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  inicio() {
+  index() {
     this.router.navigate(['']);
   }
 
-  comentarios() {
+  comments() {
     this.router.navigate(['']);
   }
 
-  contacto() {
+  contact() {
     this.router.navigate(['']);
   }
-
+  
 }

@@ -7,18 +7,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { CommentsComponent } from './comments/comments.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    IndexComponent,
+    CommentsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    EmojiModule
+    EmojiModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
